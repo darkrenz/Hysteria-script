@@ -102,7 +102,7 @@ downloadHysteria() {
         exit 1
     fi
     yellow "检测到 Hysteria 最新版本：${last_version}，开始安装"
-    wget -N --no-check-certificate https://fast.imkcp666.workers.dev/https://github.com/HyNetwork/Hysteria/releases/download/${last_version}/Hysteria-tun-linux-$(archAffix) -O /usr/bin/hysteria
+    wget -N --no-check-certificate https://github.com/apernet/hysteria/releases/download/v1.3.3/hysteria-darwin-amd64 -O /usr/bin/hysteria
     if [[ $? -ne 0 ]]; then
         red "下载 Hysteria 失败，请确保你的服务器能够连接并下载 Github 的文件"
         exit 1
